@@ -1,2 +1,3 @@
-# PHP-Tools
-A small collection of useful PHP functions and classes I've written
+### PHP Tools ###
+
+A small collection of PHP classes that I use frequently.
