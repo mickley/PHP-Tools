@@ -1,0 +1,2 @@
+// Sample JSON cache file
+var locations = [["Data Point #1","-32.0","22.0","Point Location #1","point",0,0],["Data Point #2","-32.25","22.25","Circle #1","point",10000,1],["Data Point #3","-32.0","22.25","Grid Cell #1Grid Cell #1","point",0.25,2],["Data Point #4","-32.25","22.0","Grid Cell #1","point",0.25,3]]

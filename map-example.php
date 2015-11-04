@@ -3,16 +3,19 @@
 // Include our libraries
 include_once "library/mapclass.php";
 
-// Make an example array of data
+// Make an example array of locations
 // Syntax:
 // [title], [Lat], [Lon], [Info Content], [type], [radius/grid size], [z-index]
 // Info Content can contain HTML and will pop up in the bubble on click
-$data = array(
+$locations = array(
   array('Data Point #1', -32.0, 22.0,   'Point Location #1',    'point',    0,      1),
   array('Data Point #2', -32.25, 22.25, 'Circle #1',            'circle',   10000,  2),  
   array('Data Point #3', -32.0, 22.25,  'Grid Cell #1',         'grid',     0.25,   3),
   array('Data Point #4', -32.25, 22.0,  'Grid Cell #2',         'grid',     0.25,   4)
 );
+
+// A static JSON file to use instead of the locations array
+$cachefile = "cache/cache.json"
 
 // Make a new Map object
 $mymap = new Map;
@@ -38,7 +41,7 @@ $mymap->size = array("100%","550px");
 //$mymap->jsonfile = $cachefile;
 
 // Give the map our array of locations
-$mymap->locations = $data;
+$mymap->locations = $locations;
 
 // Use MarkerClusterer
 // $mymap->markerclusterer = TRUE;
